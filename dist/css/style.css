@@ -1,0 +1,160 @@
+/* Header */
+#header .block-inline { margin-bottom: 0; line-height: inherit; }
+#header .header-contact i { margin: 0 3px 0 0; color: #4c4c4c !important; }
+#header .header-contact .nav > li > a, 
+#header .header-contact .nav > li > span { padding: 6px 10px; display: inline-block; }
+#header .header-contact .nav > li { border-right: 1px solid #d1dee9; }
+#header .header-contact .nav > li:last-child { border-width: 0; margin-right: 10px; }
+@media (min-width: 576px) {
+    #header .logo { margin-top: 11px; margin-bottom: 11px; }
+}
+#header .header-main .header-left { padding: 16px 0; }
+.mega-menu.show-arrow > li.has-sub > a:after { content: ""; float: right; border-top: 4px solid; border-left: 4px solid transparent; border-right: 4px solid transparent; margin-top: 7px; }
+.mega-menu .narrow .popup li.menu-item > a { border-bottom-color: #335cb3; }
+#nav-panel .accordion-menu > li.menu-item > a,
+#nav-panel .accordion-menu > li.menu-item > .arrow { color: #2d529f; }
+
+/* Breadcrumbs */
+.page-top .page-sub-title { opacity: 0.65; }
+.page-top ul.breadcrumb { font-size: 0.95em; }
+.page-top ul.breadcrumb,
+.page-top ul.breadcrumb > li a { text-transform: uppercase; }
+.page-top ul.breadcrumb > li .delimiter { opacity: 0.4; }
+.page-top ul.breadcrumb > li:last-child { opacity: 0.65; }
+
+/* Footer */
+#footer .footer-bottom { border-top: 1px solid #53585e; }
+#footer .widgettitle, #footer .widget-title, #footer .widgettitle a, #footer .widget-title a { font-weight: 300; }
+#footer .widgettitle, #footer .widget-title { font-size: 1.8em; margin-bottom: 25px; }
+#footer .footer-main > .container { padding-top: 70px; padding-bottom: 60px; }
+#footer .footer-bottom { padding: 6px 0; }
+#footer a strong { display: block; font-size: 30px; line-height: 1; font-weight: 300; }
+#footer .custom-info span:nth-child(1) { color: #95989c; }
+
+/* Layout */
+.main-content, .left-sidebar, .right-sidebar { padding-top: 65px; }
+h2.entry-title { font-size: 1.8em; line-height: 24px; text-transform: uppercase; font-weight: 700; }
+
+/* Misc */
+.box-shadow-custom { box-shadow: 10px 10px 74px -15px rgba(0, 0, 0, 0.33); }
+hr { background-image: none; background-color: #dbdbdb; }
+.lead { font-weight: 400; }
+.custom-info span:nth-child(1) { color: #90c9ea; display: inline-block; margin-right: 10px; min-width: 68px; }
+.custom-info span:nth-child(1)::after { color: #fff; content: ":"; display: block; float: right; }
+.custom-info span:nth-child(2) { color: #fff; display: inline-block; }
+.custom-button .btn { border-radius: 30px !important; padding: 10px 30px; }
+.thumb-info-custom { margin-bottom: 35px; }
+.thumb-info-custom .thumb-info { box-shadow: none; }
+.thumb-info-custom .thumb-info-side-image-wrapper { margin: 0 0 10px; float: none; }
+.thumb-info-custom .thumb-info-caption .thumb-info-caption-text { padding: 30px; font-size: 1em; line-height: 24px; }
+.thumb-info-custom h5 { font-size: 1.3em; line-height: 27px; }
+div.wpb_single_image .vc_single_image-wrapper { width: 100%; }
+.content-grid .content-grid-item { min-height: 150px; }
+
+/* Widgets */
+.widget .widgettitle, .widget .widget-title { font-size: 1.4em; font-weight: 600; text-transform: none; margin-bottom: 25px; }
+
+/* Member */
+.member-image { margin-bottom: 0; }
+.member-item .thumb-info { border: 1px solid #ddd; max-width: 99.9%; }
+.members-infinite .thumb-info:hover img { -webkit-transform: none; transform: none; }
+
+/* Revolution Slider */
+.rev_slider .slotholder:after { width: 100%; height: 100%; content: ""; position: absolute; left: 0; top: 0; pointer-events: none; 
+background: rgba(0, 0, 0, 0.25); }
+.tp-bullets .tp-bullet { background: rgba(255, 255, 255, 0.3); border-radius: 100%; border: 2px solid #fff; opacity: 0.7; padding: 7px; }
+.tp-bullets .tp-bullet.selected { opacity: 1 !important; }
+.tp-bullets .tp-bullet.selected::after { content: ''; display: block; position: absolute; top: 50%; left: 50%; width: 6px; height: 6px; 
+background: #fff; border-radius: 100%; -webkit-transform: translateX(-50%) translateY(-50%); -ms-transform: translateX(-50%) translateY(-50%); -o-transform: translateX(-50%) translateY(-50%); 
+transform: translateX(-50%) translateY(-50%); }
+
+/* Home Page */
+.content-grid { border: 1px solid #dadada; }
+.quote-icon { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.quote-icon.vc_icon_element.vc_icon_element-outer .vc_icon_element-inner.vc_icon_element-size-sm.vc_icon_element-have-style-inner { width: 50px !important; height: 50px !important; font-size: 12px; line-height: 50px; border-width: 1px; }
+.testimonial blockquote p { font-family: "Open Sans",Arial,sans-serif; font-size: 15px; line-height: 24px; }
+.testimonial.testimonial-with-quotes blockquote:before,
+.testimonial.testimonial-with-quotes blockquote:after { font-size: 40px; }
+.testimonial .testimonial-author strong { margin-top: 20px; display: inline-block; opacity: 1 !important; position: relative; text-transform: uppercase; }
+.testimonial .testimonial-author strong:before { border-top: 2px solid #80c9f2; content: ""; display: block; left: 50%; position: absolute; top: -15px; transform: translateX(-50%) translateY(-50%); width: 35%; }
+.member-carousel.owl-carousel .owl-nav .owl-next:before { font-family: "Simple-Line-Icons"; content: "\e079"; }
+.member-carousel.owl-carousel .owl-nav .owl-prev:before { font-family: "Simple-Line-Icons"; content: "\e07a"; }
+.member-carousel.owl-carousel.show-nav-title .owl-nav [class*="owl-"] { width: 30px; font-size: 28px; }
+.member-carousel.owl-carousel .owl-nav .owl-prev { left: -70px; }
+.member-carousel.owl-carousel .owl-nav { margin-top: -58px; }
+.owl-carousel.show-nav-title .owl-nav [class*="owl-"] { color: #2d529f; }
+.owl-carousel.show-nav-title .owl-nav .disabled { color: #0092e3; }
+.medical-schedules { margin: -47px 0 0 0; }
+.medical-schedules .row { margin-left: 0; margin-right: 0; }
+.medical-schedules h4 { line-height: 23px; }
+.medical-schedules h4, .medical-schedules h5, .medical-schedules a, .medical-schedules i { color: #fff !important; }
+.medical-schedules h5 { position: relative; display: inline-block; }
+.medical-schedules .box-one, .medical-schedules .box-two, .medical-schedules .box-three, .medical-schedules .box-four {
+  height: 94px; position: relative;
+  -webkit-animation-duration: 0.6s; -ms-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+}
+.medical-schedules .box-one { z-index: 4; }
+.medical-schedules .box-two { z-index: 2; }
+.medical-schedules .box-three { z-index: 5; }
+.medical-schedules .box-four { z-index: 1; }
+.medical-schedules .box-one::after { content: ''; display: block; position: absolute; top: 0; right: -40px; width: 0; height: 0;
+  border-top: 47px solid transparent; border-bottom: 47px solid transparent; border-left: 40px solid #008fe2; z-index: 5; }
+.medical-schedules .box-two { padding: 38px 38px 38px 40px !important; text-align: center; }
+.medical-schedules .box-three { padding: 38px 38px 38px 15px !important; text-align: center; }
+.medical-schedules .box-two a, .medical-schedules .box-three a { text-decoration: none; }
+.medical-schedules .box-three:hover .expanded-info { opacity: 1; z-index: 1; visibility: visible; text-align: left; }
+.medical-schedules .box-three:hover .expanded-info .info { opacity: 1; -webkit-transform: translateY(0%); -ms-transform: translateY(0%); -o-transform: translateY(0%); transform: translateY(0%); }
+.medical-schedules .box-three:hover i { -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+.medical-schedules .expanded-info { opacity: 0; position: absolute; left: 0; bottom: 99%; width: 100%; padding: 30px;
+    box-shadow: 0 -12px 30px rgba(0, 0, 0, 0.2); z-index: -1; text-align: left; visibility: hidden;
+  -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+.medical-schedules .expanded-info .info { opacity: 0; -webkit-transform: translateY(-40%); -ms-transform: translateY(-40%); -o-transform: translateY(-40%); transform: translateY(-40%); }
+.medical-schedules .expanded-info .info:nth-child(1) { -webkit-transition: all 0.3s ease 0.4s; transition: all 0.3s ease 0.4s; }
+.medical-schedules .expanded-info .info:nth-child(2) { -webkit-transition: all 0.3s ease 0.5s; transition: all 0.3s ease 0.5s; }
+.medical-schedules .expanded-info .info:nth-child(3) { -webkit-transition: all 0.3s ease 0.6s; transition: all 0.3s ease 0.6s; }
+.medical-schedules .box-two i, .medical-schedules .box-three i { position: absolute; top: 50%; right: -30px; font-size: 1.44em;
+  -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+.medical-schedules .box-two:hover i { -webkit-transform: translateY(-50%) translateX(50%); -ms-transform: translateY(-50%) translateX(50%); -o-transform: translateY(-50%) translateX(50%);
+  transform: translateY(-50%) translateX(50%); }
+.medical-schedules .box-two i { -webkit-transform: translateY(-50%) translateX(0%); -ms-transform: translateY(-50%) translateX(0%); -o-transform: translateY(-50%) translateX(0%);
+  transform: translateY(-50%) translateX(0%); }
+.medical-schedules .box-three:hover i { -webkit-transform: translateY(-50%) rotate(-90deg); -ms-transform: translateY(-50%) rotate(-90deg);
+  -o-transform: translateY(-50%) rotate(-90deg); transform: translateY(-50%) rotate(-90deg); }
+.medical-schedules .box-three i { -webkit-transform: translateY(-50%) rotate(0deg); -ms-transform: translateY(-50%) rotate(0deg); -o-transform: translateY(-50%) rotate(0deg); transform: translateY(-50%) rotate(0deg); }
+.medical-schedules .box-four label { display: block; margin: -3px 0 0; opacity: 0.5; }
+.medical-schedules .box-four strong { font-size: 1.6em; }
+.medical-schedules .box-four .feature-box { padding: 23.7px 0; color: #fff; margin: 0 -5px; }
+.medical-schedules .box-four .feature-box-icon { margin-top: 5px; }
+
+@media (max-width: 1169px) {
+    .medical-schedules .feature-box.feature-box-style-2 .feature-box-info { padding-left: 40px; }
+    .medical-schedules .expanded-info { padding: 30px 10px; }
+}
+@media (max-width: 991px) {
+  .medical-schedules h4 { padding-top: 15px !important; }
+  .medical-schedules .box-one::after { content: none; }
+  .medical-schedules .box-one, .medical-schedules .box-four { padding: 0 !important; }
+  .medical-schedules .box-two, .medical-schedules .box-three { padding: 38px !important; text-align: left; }
+  .medical-schedules .box-four .feature-box { padding: 23.7px; margin: 0; }
+  .medical-schedules .expanded-info { padding: 30px 35px; }
+}
+
+/* rtl */
+.rtl #header .header-contact i { margin: 0 0 0 3px; }
+.rtl #header .header-contact .nav > li { border-left: 1px solid #d1dee9; border-right: none; }
+.rtl #header .header-contact .nav > li:last-child { margin-left: 10px; margin-right: 0; }
+.rtl .mega-menu.show-arrow > li.has-sub > a:after { float: left; border-right: 4px solid transparent; border-left: 4px solid transparent; }
+.rtl .custom-info span:nth-child(1) { margin-left: 10px; margin-right: 0; }
+.rtl .custom-info span:nth-child(1)::after { float: left; }
+.rtl .medical-schedules .box-two { padding: 38px 40px 38px 38px; }
+.rtl .medical-schedules .box-three { padding: 38px 15px 38px 38px; }
+.rtl .medical-schedules .box-one:after { left: -40px; right: auto; border-right: 40px solid #008fe2; border-left: none; }
+.rtl .medical-schedules .box-three:hover .expanded-info { text-align: right; }
+.rtl .medical-schedules .box-two i, .rtl .medical-schedules .box-three i { left: -30px; right: auto; }
+@media (max-width: 1169px) {
+    .rtl .medical-schedules .feature-box.feature-box-style-2 .feature-box-info { padding-right: 40px; padding-left: 0; }
+}
+@media (max-width: 991px) {
+    .rtl .medical-schedules .box-two, .rtl .medical-schedules .box-three { text-align: right; }
+}
