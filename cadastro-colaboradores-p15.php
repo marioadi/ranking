@@ -1,8 +1,6 @@
-<?php 
-require 'conexao.php';
-session_start();
-require 'usuario.class.php';
-require 'colaboradores.class.php';
+<?php session_start(); 
+require 'class/usuario.class.php';
+require 'class/colaboradores.class.php';
 $usuario = new Usuario();
 $colab = new Colaboradores();
 
