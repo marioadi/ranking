@@ -1,9 +1,8 @@
 <?php session_start(); 
-require 'conexao.php';
 require 'usuario.class.php';
-require 'colab.class.php';
+require 'ranking.class.php';
+$ranking = new Ranking();
 $usuario = new Usuario();
-$colab = new Colab();
 
 if (isset($_SESSION['id_user']) && !empty($_SESSION['id_user']) ) {
     $usuario->loginAuth($_SESSION['id_user']);
@@ -239,7 +238,8 @@ if(isset($_GET['deslogar'])){
 
 
 <?php 
-  $sql = $pdo->query("SELECT id, nome, resultado FROM pcj ORDER BY resultado DESC");
+  //$sql = $pdo->query("SELECT id, nome, resultado FROM pcj ORDER BY resultado DESC");
+  $sql = $ranking->searchResultPcj();
 ?>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">

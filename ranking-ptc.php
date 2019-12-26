@@ -1,20 +1,22 @@
-<?php 
-require 'conexao.php';
-session_start();
+<?php session_start();
+require 'usuario.class.php';
+require 'ranking.class.php';
+
+$usuario = new Usuario();
+$ranking = new Ranking();
 
 if (isset($_SESSION['id_user']) && !empty($_SESSION['id_user']) ) {
-    $id_user_logado = $_SESSION['id_user'];
-
-    $dados_user = $pdo->query("SELECT name FROM users WHERE id = '".$id_user_logado."'");
-    if($dados_user->rowCount() > 0){
-      $ln_user = $dados_user->fetch();
-      $nome_user = $ln_user['name'];
-    }
+    $usuario->loginAuth($_SESSION['id_user']);
 }else{
   header("Location: index.php");
   exit;
 }
 
+if(isset($_GET['deslogar'])){
+  $usuario->logout();
+  header("Location: index.php");
+  exit;
+}
 ?>
 
 <!DOCTYPE html>
@@ -85,14 +87,14 @@ if (isset($_SESSION['id_user']) && !empty($_SESSION['id_user']) ) {
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="dist/img/avatar.png" class="user-image" alt="User Image">
-              <span class="hidden-xs"><?php echo $nome_user; ?></span>
+              <span class="hidden-xs"><?php echo $usuario->getNome(); ?></span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
                 <img src="dist/img/avatar.png" class="img-circle" alt="User Image">
                 <p>
-                  Associado(a) <?php echo $nome_user; ?>
+                  Associado(a) <?php echo $usuario->getNome(); ?>
                   <small>Membro</small>
                 </p>
               </li>
@@ -106,7 +108,7 @@ if (isset($_SESSION['id_user']) && !empty($_SESSION['id_user']) ) {
                   <a href="#" class="btn btn-default btn-flat">Perfil</a>
                 </div>
                 <div class="pull-right">
-                  <a href="sair.php" class="btn btn-default btn-flat">Deslogar</a>
+                  <a href="?deslogar" class="btn btn-default btn-flat">Deslogar</a>
                 </div>
               </li>
             </ul>
@@ -129,7 +131,7 @@ if (isset($_SESSION['id_user']) && !empty($_SESSION['id_user']) ) {
           <img src="dist/img/avatar.png" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p><?php echo $nome_user; ?></p>
+          <p><?php echo $usuario->getNome(); ?></p>
           <a href="#"><i class="fa fa-circle" style="color:#7fff00;"></i> Online</a>
         </div>
       </div>
@@ -236,7 +238,7 @@ if (isset($_SESSION['id_user']) && !empty($_SESSION['id_user']) ) {
 
 
 <?php 
-  $sql = $pdo->query("SELECT id, nome, resultado FROM ptc ORDER BY resultado DESC");
+  $sql = $ranking->searchResultPtc();
 ?>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script type="text/javascript">
