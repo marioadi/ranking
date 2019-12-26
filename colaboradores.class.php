@@ -30,10 +30,9 @@ class Colaboradores{
 	}
 
 	// CADASTRO ******************************************************************************************
-	public function addColabPcj($nome, $valor, $data){
+	public function addColabPcj($nome, $valor){
 		$nome = addslashes($nome);
 		$valor = addslashes($valor);
-		$data = addslashes($data);
 
 		$sql = $this->pdo->prepare("INSERT INTO pcj SET nome = :nome, resultado = :valor, data = NOW()");
 		$sql->bindValue(":nome", $nome);
@@ -41,10 +40,9 @@ class Colaboradores{
 		$sql->execute();
 	}
 
-	public function addColabPtc($nome, $valor, $data){
+	public function addColabPtc($nome, $valor){
 		$nome = addslashes($nome);
 		$valor = addslashes($valor);
-		$data = addslashes($data);
 
 		$sql = $this->pdo->prepare("INSERT INTO ptc SET nome = :nome, resultado = :valor, data = NOW()");
 		$sql->bindValue(":nome", $nome);
@@ -52,10 +50,9 @@ class Colaboradores{
 		$sql->execute();
 	}
 
-	public function addColabP15($nome, $valor, $data){
+	public function addColabP15($nome, $valor){
 		$nome = addslashes($nome);
 		$valor = addslashes($valor);
-		$data = addslashes($data);
 
 		$sql = $this->pdo->prepare("INSERT INTO p15 SET nome = :nome, resultado = :valor, data = NOW()");
 		$sql->bindValue(":nome", $nome);

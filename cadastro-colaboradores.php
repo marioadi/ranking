@@ -153,7 +153,7 @@ if(isset($_GET['deslogar'])){
     <?php
 
       if(isset($_POST['nome-cad']) && !empty($_POST['nome-cad'])){
-          $colab->addColabPcj($_POST['nome-cad'], $_POST['valor-cad'], $_POST['data-cad']);
+          $colab->addColabPcj($_POST['nome-cad'], $_POST['valor-cad']);
       }
 
     ?>
@@ -182,10 +182,6 @@ if(isset($_GET['deslogar'])){
                                           <label class="control-label">Valor</label>
                                           <input class="form-control" type="text" name="valor-cad" >
                                       </div>
-                                      <div class="col-xs-12 col-sm-4">
-                                          <label class="control-label">Data</label>
-                                          <input class="form-control" type="text" name="data-cad">
-                                      </div> 
                                   </div>
                               </div>    
                             </div>
