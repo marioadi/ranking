@@ -62,19 +62,19 @@ class Colaboradores{
 
 
 	// ATUALIZAR DADOS ***********************************************************************************
-	public function updateColabPcj($id_edit, $nome_edit, $valor_edit, $data_edit){
-		$this->pdo->prepare("UPDATE p15 SET nome = ?, valor = ?, data = ? WHERE id = ?");
-		$this->pdo->execute(array($nome_edit, $valor_edit, $data_edit, $id_edit));
+	public function updateColabPcj($id_edit, $nome_edit, $valor_edit){
+		$this->pdo->prepare("UPDATE p15 SET nome = ?, valor = ?, data = NOW() WHERE id = ?");
+		$this->pdo->execute(array($nome_edit, $valor_edit, $id_edit));
 	}
 
-	public function updateColabPtc($id_edit, $nome_edit, $valor_edit, $data_edit){
-		$this->pdo->prepare("UPDATE ptc SET nome = ?, valor = ?, data = ? WHERE id = ?");
-		$this->pdo->execute(array($nome_edit, $valor_edit, $data_edit, $id_edit));
+	public function updateColabPtc($id_edit, $nome_edit, $valor_edit){
+		$this->pdo->prepare("UPDATE ptc SET nome = ?, valor = ?, data = NOW() WHERE id = ?");
+		$this->pdo->execute(array($nome_edit, $valor_edit, $id_edit));
 	}
 
-	public function updateColabP15($id_edit, $nome_edit, $valor_edit, $data_edit){
-		$this->pdo->prepare("UPDATE p15 SET nome = ?, valor = ?, data = ? WHERE id = ?");
-		$this->pdo->execute(array($nome_edit, $valor_edit, $data_edit, $id_edit));
+	public function updateColabP15($id_edit, $nome_edit, $valor_edit){
+		$this->pdo->prepare("UPDATE p15 SET nome = ?, valor = ?, data = NOW() WHERE id = ?");
+		$this->pdo->execute(array($nome_edit, $valor_edit, $id_edit));
 	}
 
 	// PEGAR DADOS ***************************************************************************************

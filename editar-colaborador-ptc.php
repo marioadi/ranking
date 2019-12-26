@@ -25,7 +25,7 @@ if(isset($_POST['nome-panel']) && !empty($_POST['nome-panel'])){
 }
 
 if(isset($_POST['nome-edit']) && !empty($_POST['nome-edit'])){
-  $colab->updateColabPtc($_POST['id-edit'], $_POST['nome-edit'], $_POST['valor-edit'], $_POST['data-edit']);
+  $colab->updateColabPtc($_POST['id-edit'], $_POST['nome-edit'], $_POST['valor-edit']);
   $dados_colab = $colab->colabAuthPtc($_POST['id-edit']);
 }
 
@@ -185,10 +185,6 @@ if(isset($_POST['nome-edit']) && !empty($_POST['nome-edit'])){
                                           <label class="control-label">Valor</label>
                                           <input class="form-control" type="text" value="<?php echo $dados_colab['resultado'];?>" name="valor-edit" >
                                       </div>
-                                      <div class="col-xs-12 col-sm-4">
-                                          <label class="control-label">Data</label>
-                                          <input class="form-control" type="text" value="<?php echo $dados_colab['data'];?>" name="data-edit">
-                                      </div> 
                                   </div>
                               </div>    
                             </div>

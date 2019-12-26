@@ -170,31 +170,19 @@ if(isset($_GET['deslogar'])){
         <!-- Inicio Conteudo -->
             <section class="content">
                 <div class="row">
-					<div class="col-sm-12">
-						<div class="painel-botoes">
-							<a id="print" class="btn btn-primary">
-								<i class="fa fa-file-pdf-o"></i>
-								<span>Exporta PDF</span>
-							</a>
-						</div>
-					</div>
+      					<div class="col-sm-12">
+      						<div class="painel-botoes">
+      							<a id="print" class="btn btn-primary">
+      								<i class="fa fa-file-pdf-o"></i>
+      								<span>Exporta PDF</span>
+      							</a>
+      						</div>
+      					</div>
                   <div class="col-xs-12 table-responsive" style="overflow-y: hidden;">
                     
                     <div id="columnchart_values" style="width:1050px; height: 440px;"></div>
 					
                     <!-- /.box -->
-                  </div>
-                  <div class="col-sm-12">
-                    <div class="painel-botoes">
-                        <a href="painel.php" class="btn btn-primary">
-                            <i class="fa fa-angle-double-left"></i>
-                            <span>Voltar</span>
-                        </a>
-                        <a href="cadastro-colaboradores.php" class="btn btn-success">
-                            <i class="fa fa-plus"></i>
-                            <span>Cadastrar</span>
-                        </a>
-                    </div>
                   </div>
                   <!-- /.col -->
                 </div>
@@ -202,7 +190,18 @@ if(isset($_GET['deslogar'])){
             </section>
         <!-- Fim Conteudo -->
         </section>
-
+        <div class="col-sm-12">
+          <div class="painel-botoes">
+              <a href="painel.php" class="btn btn-primary">
+                  <i class="fa fa-angle-double-left"></i>
+                  <span>Voltar</span>
+              </a>
+              <a href="cadastro-colaboradores.php" class="btn btn-success">
+                  <i class="fa fa-plus"></i>
+                  <span>Cadastrar</span>
+              </a>
+          </div>
+        </div>
       </div>
     </section>
   </div>
