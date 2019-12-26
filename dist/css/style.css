@@ -158,3 +158,8 @@ transform: translateX(-50%) translateY(-50%); }
 @media (max-width: 991px) {
     .rtl .medical-schedules .box-two, .rtl .medical-schedules .box-three { text-align: right; }
 }
+
+.painel-botoes{
+  text-align: center;
+  padding: 10px 0px;
+}

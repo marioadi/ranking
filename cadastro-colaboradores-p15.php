@@ -186,18 +186,18 @@ if(isset($_GET['deslogar'])){
                                           <input class="form-control" type="text" name="data-cad">
                                       </div> 
                                   </div>
-                              </div>    
-                            </div>
-							
-                            <div class="col-sm-12">
-							  <div class="painel-botoes">
-									<a href="painel-ptc.php" class="btn btn-primary">
-									  <i class="fa fa-angle-double-left"></i>
-									  <span>Voltar</span>
-									</a>
-									<button type="submit" class="btn btn-success"><i class="fa fa-plus"></i> Cadastrar</button>  
-							  </div>
-							</div>    
+                              </div>
+							               
+                              <div class="col-sm-12">
+                							  <div class="painel-botoes">
+                									<a href="painel-ptc.php" class="btn btn-primary">
+                									  <i class="fa fa-angle-double-left"></i>
+                									  <span>Voltar</span>
+                									</a>
+                									<button type="submit" class="btn btn-success"><i class="fa fa-plus"></i> Cadastrar</button>  
+                							  </div>
+                							</div> 
+                             </div>   
                         </div>
                   </form>
                   </div>             
