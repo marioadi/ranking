@@ -1,6 +1,6 @@
 <?php session_start(); 
-require 'usuario.class.php';
-require 'ranking.class.php';
+require 'class/usuario.class.php';
+require 'class/ranking.class.php';
 $ranking = new Ranking();
 $usuario = new Usuario();
 
