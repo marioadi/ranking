@@ -1,7 +1,5 @@
-<?php
-require 'conexao.php';
-session_start();
-include 'usuario.class.php';
+<?php session_start();
+include 'class/usuario.class.php';
 $usuario = new Usuario();
   
   if (isset($_POST['usuario']) && !empty($_POST['usuario']) ) {
