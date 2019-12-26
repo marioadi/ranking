@@ -190,7 +190,7 @@ if(isset($_GET['deslogar'])){
 							               
                               <div class="col-sm-12">
                 							  <div class="painel-botoes">
-                									<a href="painel-ptc.php" class="btn btn-primary">
+                									<a href="painel-p15.php" class="btn btn-primary">
                 									  <i class="fa fa-angle-double-left"></i>
                 									  <span>Voltar</span>
                 									</a>
